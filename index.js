@@ -5,7 +5,7 @@ const app=express()
 app.use(express.json())
 app.use("/",route)
 app.get("/",(req,res)=>{
-    console.log("welcome");
+    res.json("welcome");
 })
 
 app.listen(4500, async()=>{
